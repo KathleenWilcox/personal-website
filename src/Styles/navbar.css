@@ -1,23 +1,21 @@
 .navbar {
-  width: 100vw;
-  background-color: white;
+  width: 100%;
+  background-color: #EFE9E8;
   text-align: center;
-  display: flex;
-  justify-content: center;
+  display: block;
   align-items: center;
-  border-radius: 4px;
-
+  padding: 20px;
 }
 
 .navbar__link {
   margin: 3em;
-  font-size: 2vh;
-  font-family: 'Rubik', sans-serif;
+  font-size: 11.5px;
+  font-family: 'Raleway', sans-serif;
   cursor: pointer;
   text-decoration: none;
   letter-spacing: .3em;
   text-indent: .3em;
-  color: #D0A792;
+  color: #222222;
   border-bottom: 3px solid transparent;
 }
 

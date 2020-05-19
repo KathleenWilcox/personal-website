@@ -1,16 +1,16 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from '../Pages/Home';
+import College from '../Pages/College';
 import Products from '../Pages/Products';
-import Contact from '../Pages/Contact';
+import About from '../Pages/About';
 
 
 
 const Routes = () => (
   <Switch>
-    <Route exact path="/" component={Home} />
+    <Route exact path="/" component={College} />
     <Route path="/Products" component={Products} />
-    <Route path="/Contact" component={Contact} />
+    <Route path="/About" component={About} />
   </Switch>
 );
 

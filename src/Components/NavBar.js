@@ -10,7 +10,7 @@ const Navbar = () => (
       className="navbar__link"
       to="/"
     >
-      Home
+      College
     </NavLink>
     <NavLink
       activeClassName="navbar__link--active"
@@ -24,9 +24,10 @@ const Navbar = () => (
       className="navbar__link"
       to="/Contact"
     >
-      Contact
+      About
     </NavLink>
   </nav>
+
 );
 
 export default Navbar;
