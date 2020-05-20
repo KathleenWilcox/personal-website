@@ -6,13 +6,21 @@ import College from './Pages/College';
 import Products from './Pages/Products';
 import About from './Pages/About';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './Styles/logo.css';
+import { useMediaPredicate } from 'react-media-hook';
 
 class App extends React.Component {
   render(){
     return(
-    <>
-      <Navbar />
-      <Logo/>
+    <div className = "App-container">
+
+
+        <Navbar />
+
+
+
+        <Logo/>
+
       <Router>
       <Switch>
         <Route exact path="/" component={College} />
@@ -20,7 +28,9 @@ class App extends React.Component {
         <Route path="/About" component={About} />
       </Switch>
       </Router>
-    </>
+
+
+    </div>
   );
   }
 }

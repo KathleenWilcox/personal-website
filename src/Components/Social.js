@@ -13,42 +13,31 @@ import{
 class Social extends React.Component {
   render(){
     return(
+      <div className = "social-follow">
       <ul>
-
       <li>
-      <a
-        href= "https://twitter.com/katieeroseeeee"
-        className= "soc-icon"
-        >
-        <FontAwesomeIcon icon={faTwitter} size = "0.5x"/>
+      <a href= "https://twitter.com/katieeroseeeee" className= "soc-icon">
+        <FontAwesomeIcon icon={faTwitter} />
       </a>
       </li>
 
       <li>
-      <a
-        href= "https://www.instagram.com/katieroseeeee/?hl=en"
-        className= "soc-icon"
-        >
-        <FontAwesomeIcon icon={faInstagram} size = "0.5x"/>
+      <a href= "https://www.instagram.com/katieroseeeee/?hl=en" className= "soc-icon">
+        <FontAwesomeIcon icon={faInstagram} />
       </a>
       </li>
 
-      <a
-        href= "https://www.pinterest.com/kathleenrwilcox/"
-        className= "soc-icon"
-        >
-        <FontAwesomeIcon icon={faPinterest} size = "0.5x"/>
+      <a href= "https://www.pinterest.com/kathleenrwilcox/" className= "soc-icon" >
+        <FontAwesomeIcon icon={faPinterest} />
       </a>
 
       <li>
-      <a
-        href= "https://www.facebook.com/katie.rose.wilcox?ref=bookmarks"
-        className= "soc-icon"
-        >
-        <FontAwesomeIcon icon={faFacebook} size = "0.5x"/>
+      <a href= "https://www.facebook.com/katie.rose.wilcox?ref=bookmarks" className= "soc-icon">
+        <FontAwesomeIcon icon={faFacebook} />
       </a>
       </li>
       </ul>
+      </div>
     );
   }
 }

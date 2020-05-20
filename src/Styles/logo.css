@@ -1,13 +1,14 @@
 
 .logo-container{
   padding-top: 25px;
-  text-align: center;
+  display:flex;
+  justify-content: center;
 }
 
 .logo-link{
   font-family: 'Playfair Display', serif;
   text-decoration: none;
-  font-size: 33px;
+  font-size: 50px;
   letter-spacing: 1px;
   letter-spacing: 2.5px;
   position: relative;
@@ -18,12 +19,12 @@
   /* create a new stacking context */
   position: absolute;
   content: '';
-  width: 100px;
-  height: 15px;
+  width: calc(100% + 10px);
+  height: 10px;
   background: #EFE9E8;;
   z-index: -1;  /* to be below the parent element */
   left: -5px;
-  bottom: 1px;
+  bottom: 8px;
 
 }
 a:hover{
