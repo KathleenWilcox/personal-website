@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Products extends React.PureComponent {
+class Products extends React.Component {
   render() {
     return (
       <div>Products Works!</div>

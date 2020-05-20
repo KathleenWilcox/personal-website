@@ -1,0 +1,27 @@
+
+.logo-container{
+  padding-top: 25px;
+}
+
+.logo-link{
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  font-size: 33px;
+  letter-spacing: 1px;
+  letter-spacing: 2.5px;
+  position: relative;
+  color: #222222;
+}
+
+.logo-link::after{
+  /* create a new stacking context */
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 10px;
+  background: #EFE9E8;;
+  z-index: -1;  /* to be below the parent element */
+  left: -5px;
+  bottom: 4px;
+
+}
