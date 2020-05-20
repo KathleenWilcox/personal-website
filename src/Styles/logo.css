@@ -1,6 +1,7 @@
 
 .logo-container{
   padding-top: 25px;
+  text-align: center;
 }
 
 .logo-link{
@@ -18,10 +19,10 @@
   position: absolute;
   content: '';
   width: 100px;
-  height: 10px;
+  height: 15px;
   background: #EFE9E8;;
   z-index: -1;  /* to be below the parent element */
   left: -5px;
-  bottom: 4px;
+  bottom: 1px;
 
 }
