@@ -7,6 +7,7 @@ import About from './Pages/About';
 import Featured from './Components/Featured'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './Styles/logo.css';
+import Slider from './Components/Slider'
 
 class App extends React.Component {
   render(){
@@ -17,7 +18,7 @@ class App extends React.Component {
 
         <Navbar />
         <Logo/>
-        <Featured/>
+        <Slider/>
         <Switch>
           <Route exact path="/" component={College} />
           <Route path="/Products" component={Products} />

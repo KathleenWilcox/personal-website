@@ -16,7 +16,7 @@ class SearchBar extends React.Component{
         <input className ="search-input" type="text" placeholder=""/>
 
         <button className = "search-button" type= "submit">
-          <FontAwesomeIcon icon={faSearch} />
+        <i class="fas fa-search"></i>
         </button>
 
         </div>
