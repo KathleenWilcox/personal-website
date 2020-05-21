@@ -2,7 +2,7 @@
 
   function Image({src}){
     let imgStyles = {
-      width: 100 + "%",
+      width: 33 + "%",
       height: "auto"
     }
     return <img  src={src} alt="slide image" style = {imgStyles}/>

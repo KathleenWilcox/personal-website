@@ -19,10 +19,18 @@ function Slider(){
       x ===  0 ? setX(-100 * (slider_arr.length-1)) : setX( x+100 );
     };
     const goRight  = () => {
+      //setX(x-100);
       x ===  -100 * (slider_arr.length-1) ? setX(0): setX( x-100 );
     };
 
     return(
+<div className = "slider-container">
+      <div>
+      <button id = "goLeft" onClick = {goLeft}> <i class="fa fa-angle-left"></i> </button>
+      </div>
+
+
+
       <div className = "slider">
 
       {slider_arr.map((item,index) => {
@@ -32,8 +40,13 @@ function Slider(){
           </div>
         );
       })}
-      <button id = "goLeft" onClick = {goLeft}> <i class="fa fa-angle-left"></i> </button>
+
+      </div>
+
+      <div>
       <button id = "goRight" onClick = {goRight}> <i class="fa fa-angle-right"></i> </button>
+      </div>
+
       </div>
      );
 }
