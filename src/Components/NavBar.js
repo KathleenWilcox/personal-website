@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import '../Styles/navbar.css';
 import Social from './Social';
 import SearchBar from './SearchBar';
@@ -16,11 +16,11 @@ class NavBar extends React.Component {
 
       <nav className="navbar">
             <ul>
-              <li><NavLink exact activeClassName="navbar__link--active" className="navbar__link" to="/">College</NavLink></li>
+              <li><Link exact activeClassName="navbar__link--active" className="navbar__link" to="/">College</Link></li>
 
-              <li><NavLink activeClassName="navbar__link--active" className="navbar__link" to="/Products">Products</NavLink></li>
+              <li><Link activeClassName="navbar__link--active" className="navbar__link" to="/Products">Products</Link></li>
 
-              <li> <NavLink activeClassName="navbar__link--active" className="navbar__link" to="/Contact">About</NavLink> </li>
+              <li> <Link activeClassName="navbar__link--active" className="navbar__link" to="/About">About</Link> </li>
             </ul>
       </nav>
 

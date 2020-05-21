@@ -1,0 +1,17 @@
+.featured-container{
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.featured-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: center;
+  float: left;
+  height: 450px;
+  width: 33.33%;
+  padding: 10px;
+}

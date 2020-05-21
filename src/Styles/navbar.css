@@ -17,6 +17,7 @@ ul{
   letter-spacing: .3em;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
+  cursor: pointer;
   color: #222222;
   font-size: 11.5px;
 }
@@ -25,9 +26,6 @@ ul{
   font-size: 11.5px;
   margin: 0 1rem;
   color: #222222;
-}
-
-.search-container{
 }
 
 .search-component{
