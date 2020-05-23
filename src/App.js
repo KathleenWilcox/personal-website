@@ -15,6 +15,11 @@ import img3 from './Images/img3.png'
 import img4 from './Images/img4.png'
 import img5 from './Images/img5.png'
 import img6 from './Images/img6.jpg'
+import coffee from './Images/coffee.jpg'
+import hands from './Images/hands.png'
+import model from './Images/model.jpg'
+
+
 
 class App extends React.Component {
   render(){
@@ -26,7 +31,7 @@ class App extends React.Component {
         <Navbar />
         <Logo/>
 
-        <Recycler  images = {[ img1,  img2 ,  img3 , img4 ,img5, img6 ]} />
+        <Recycler  images = {[ coffee,  hands ,  model , img4 ,img5, img6 ]} />
 
 
         <Switch>
