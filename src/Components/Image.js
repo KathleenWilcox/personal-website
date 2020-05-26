@@ -1,11 +1,31 @@
   import React from 'react';
-  import '../Styles/slider.scss';
+  import '../Styles/Image.scss';
 
-  function Image({src}){
-    let imgStyles = {
-      width: 33 + "%",
-      height: "auto"
+  class Image extends React.Component {
+    constructor(props){
+      super(props);
+
+      this.state = {
+        wobble: 0
+      };
     }
-    return <img  className = "slide" src={src} alt="slide image" />
+
+    setWobble(val){
+      this.setState({
+        wobble: val
+      });
+    }
+
+    render(){
+      return (
+      <img
+        className="Image"
+        src={ this.props.src }
+        alt="slide image"
+        onAnimationEnd={this.props.renderFunction}
+        wobble={this.state.wobble}
+      />
+    );
   }
-  export default Image;
+}
+export default Image;

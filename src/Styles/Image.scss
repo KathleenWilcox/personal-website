@@ -1,0 +1,30 @@
+.Image{
+  position: relative;
+  min-width: 33%;
+  height: 40vh;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.Image[wobble = '1']{
+  animation: wobble 0.25s 1;
+  animation-fill-mode: forwards;
+}
+
+.Image[wobble = '-1']{
+  animation: wobble1 0.25s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes wobble{
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes wobble1{
+  100% {
+    transform: translateX(100%);
+  }
+}
