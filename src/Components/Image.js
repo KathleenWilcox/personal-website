@@ -19,7 +19,7 @@
     render(){
       return (
       <img
-        className="Image"
+        className={this.props.hidden ? "hidden-Image" : "Image"}
         src={ this.props.src }
         alt="slide image"
         onAnimationEnd={this.props.renderFunction}
