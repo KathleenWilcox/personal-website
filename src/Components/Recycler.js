@@ -50,10 +50,10 @@ class Recycler extends React.Component{
       this.image3.current.setWobble(-1);
 
     } else {
-      this.image1.current.setWobble(-1);
-      this.image2.current.setWobble(-1);
-      this.image3.current.setWobble(-1);
       this.image4.current.setWobble(-1);
+      this.image3.current.setWobble(-1);
+      this.image2.current.setWobble(-1);
+      this.image1.current.setWobble(-1);
     }
   }
 
