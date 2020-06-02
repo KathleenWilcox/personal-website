@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import Image from './Image';
-import coffee from '../Images/coffee.jpg'
-import hands from '../Images/hands.png'
-import model from '../Images/model.jpg'
+
+import coffee from '../Images/coffee.jpg';
+import hands from '../Images/hands.png';
+import model from '../Images/model.jpg';
+
 import '../Styles/slider.scss';
 
-
+//depracated
 function Slider(){
     let slider_arr = [
       <Image src= {coffee} />,

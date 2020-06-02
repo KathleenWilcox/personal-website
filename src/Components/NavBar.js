@@ -16,7 +16,7 @@ class NavBar extends React.Component {
 
       <nav className="navbar">
             <ul>
-              <li><Link exact activeClassName="navbar__link--active" className="navbar__link" to="/">College</Link></li>
+              <li><Link exact activeClassName="navbar__link--active" className="navbar__link" to="/College">College</Link></li>
 
               <li><Link activeClassName="navbar__link--active" className="navbar__link" to="/Products">Products</Link></li>
 

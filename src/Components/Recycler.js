@@ -200,19 +200,19 @@ class Recycler extends React.Component{
       );
     } else{
       return(
-      <div className = "slider-right" >
+        <div className = "slider-right" >
 
-      <Image  hidden = {true} src = {this.props.images[this.state.hiddenLeft] } ref = {this.image0} renderFunction = { () => {} } />
+        <Image  hidden = {true} src = {this.props.images[this.state.hiddenLeft] } ref = {this.image0} renderFunction = { () => {} } />
 
-      <Image hidden = {false} src = {this.props.images[this.state.left] } ref = {this.image1}  renderFunction = { () => {} } />
+        <Image hidden = {false} src = {this.props.images[this.state.left] } ref = {this.image1}  renderFunction = { () => {} } />
 
-      <Image  hidden = {false} src = {this.props.images[this.state.mid] } ref = {this.image2}  renderFunction={this.renderImagesRight}/>
+        <Image  hidden = {false} src = {this.props.images[this.state.mid] } ref = {this.image2}  renderFunction={this.renderImagesRight}/>
 
-      <Image hidden = {false} src = {this.props.images[this.state.right] } ref = {this.image3}  renderFunction = { () => {} }/>
+        <Image hidden = {false} src = {this.props.images[this.state.right] } ref = {this.image3}  renderFunction = { () => {} }/>
 
-      <Image hidden = {true} src = {this.props.images[this.state.hiddenRight] } ref = {this.image4} renderFunction = { () => {} } />
+        <Image hidden = {true} src = {this.props.images[this.state.hiddenRight] } ref = {this.image4} renderFunction = { () => {} } />
 
-      </div>
+        </div>
     );
     }
 

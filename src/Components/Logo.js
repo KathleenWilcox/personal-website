@@ -1,4 +1,8 @@
 import React from 'react'
+
+import {Link } from 'react-router-dom';
+import Home from '../Pages/Home'
+
 import '../Styles/logo.css';
 
 class Logo extends React.Component {
@@ -6,10 +10,8 @@ class Logo extends React.Component {
     return(
 
       <div className = "logo-container" >
-      
-      <a className = "logo-link" href = {'http://google.com'}>
-          Katie
-      </a>
+
+      <Link exact activeClassName="navbar__link--active" className="logo-link" to="/">Katie</Link>
 
       </div>
     );
