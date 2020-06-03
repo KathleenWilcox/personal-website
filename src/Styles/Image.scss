@@ -5,23 +5,23 @@
   padding: 5px;
 }
 
-.Image[wobble = '1']{
+.Image[dir = '1']{
   animation: slide-right 1s 1;
   animation-fill-mode: forwards;
 }
 
-.Image[wobble = '-1']{
+.Image[dir = '-1']{
   animation: slide-left 1s 1;
   animation-fill-mode: forwards;
 }
 
-.hidden-Image[wobble = '1']{
+.hidden-Image[dir = '1']{
   animation: slide-right 1s 1;
   animation-fill-mode: forwards;
   display: inline;
 }
 
-.hidden-Image[wobble = '-1']{
+.hidden-Image[dir = '-1']{
   animation: slide-left 1s 1;
   animation-fill-mode: forwards;
   display: inline;

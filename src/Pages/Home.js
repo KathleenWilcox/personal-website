@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Recycler from '../Components/Recycler';
+import Post from '../Components/Post';
 
 import img4 from '../Images/img4.png';
 import img5 from '../Images/img5.png';
@@ -16,6 +17,7 @@ class Home extends React.Component{
     return(
       <>
       <Recycler  images = {[ coffee,  hands ,  model , img4 ,img5, img6 ]} />
+      <Post/>
       </>
     )
   }

@@ -44,27 +44,27 @@ class Recycler extends React.Component{
 
     if(oldXdir === -1 ) {
 
-      this.image0.current.setWobble(-1);
-      this.image1.current.setWobble(-1);
-      this.image2.current.setWobble(-1);
-      this.image3.current.setWobble(-1);
+      this.image0.current.slideDirection(-1);
+      this.image1.current.slideDirection(-1);
+      this.image2.current.slideDirection(-1);
+      this.image3.current.slideDirection(-1);
 
     } else {
-      this.image4.current.setWobble(-1);
-      this.image3.current.setWobble(-1);
-      this.image2.current.setWobble(-1);
-      this.image1.current.setWobble(-1);
+      this.image4.current.slideDirection(-1);
+      this.image3.current.slideDirection(-1);
+      this.image2.current.slideDirection(-1);
+      this.image1.current.slideDirection(-1);
     }
   }
 
 
   renderImagesLeft(){
 
-    this.image0.current.setWobble(0);
-    this.image1.current.setWobble(0);
-    this.image2.current.setWobble(0);
-    this.image3.current.setWobble(0);
-    this.image4.current.setWobble(0);
+    this.image0.current.slideDirection(0);
+    this.image1.current.slideDirection(0);
+    this.image2.current.slideDirection(0);
+    this.image3.current.slideDirection(0);
+    this.image4.current.slideDirection(0);
 
     let hiddenLeft = this.state.hiddenLeft;
     let left = this.state.left;
@@ -120,26 +120,26 @@ class Recycler extends React.Component{
 
     if( oldXdir === 1 || oldXdir === 0){
 
-      this.image1.current.setWobble(1);
-      this.image2.current.setWobble(1);
-      this.image3.current.setWobble(1);
-      this.image4.current.setWobble(1);
+      this.image1.current.slideDirection(1);
+      this.image2.current.slideDirection(1);
+      this.image3.current.slideDirection(1);
+      this.image4.current.slideDirection(1);
 
     } else {
-      this.image0.current.setWobble(1);
-      this.image1.current.setWobble(1);
-      this.image2.current.setWobble(1);
-      this.image3.current.setWobble(1);
+      this.image0.current.slideDirection(1);
+      this.image1.current.slideDirection(1);
+      this.image2.current.slideDirection(1);
+      this.image3.current.slideDirection(1);
     }
   }
 
   renderImagesRight(){
 
-    this.image0.current.setWobble(0);
-    this.image1.current.setWobble(0);
-    this.image2.current.setWobble(0);
-    this.image3.current.setWobble(0);
-    this.image4.current.setWobble(0);
+    this.image0.current.slideDirection(0);
+    this.image1.current.slideDirection(0);
+    this.image2.current.slideDirection(0);
+    this.image3.current.slideDirection(0);
+    this.image4.current.slideDirection(0);
 
 
     let hiddenLeft = this.state.hiddenLeft;

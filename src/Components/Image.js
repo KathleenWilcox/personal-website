@@ -6,13 +6,13 @@
       super(props);
 
       this.state = {
-        wobble: 0
+        dir: 0
       };
     }
 
-    setWobble(val){
+    slideDirection(val){
       this.setState({
-        wobble: val
+        dir: val
       });
     }
 
@@ -23,7 +23,7 @@
         src={ this.props.src }
         alt="slide image"
         onAnimationEnd={this.props.renderFunction}
-        wobble={this.state.wobble}
+        dir={this.state.dir}
       />
     );
   }
