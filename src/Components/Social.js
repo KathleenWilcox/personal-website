@@ -16,23 +16,23 @@ class Social extends React.Component {
       <div className = "social-follow">
       <ul>
       <li>
-      <a href= "https://twitter.com/katieeroseeeee" className= "soc-icon">
+      <a href= "https://twitter.com/katieeroseeeee" target="_blank" className= "soc-icon">
         <FontAwesomeIcon icon={faTwitter} />
       </a>
       </li>
 
       <li>
-      <a href= "https://www.instagram.com/katieroseeeee/?hl=en" className= "soc-icon">
+      <a href= "https://www.instagram.com/katieroseeeee/?hl=en" target="_blank" className= "soc-icon">
         <FontAwesomeIcon icon={faInstagram} />
       </a>
       </li>
 
-      <a href= "https://www.pinterest.com/kathleenrwilcox/" className= "soc-icon" >
+      <a href= "https://www.pinterest.com/kathleenrwilcox/" target="_blank" className= "soc-icon" >
         <FontAwesomeIcon icon={faPinterest} />
       </a>
 
       <li>
-      <a href= "https://www.facebook.com/katie.rose.wilcox?ref=bookmarks" className= "soc-icon">
+      <a href= "https://www.facebook.com/katie.rose.wilcox?ref=bookmarks" target="_blank" className= "soc-icon">
         <FontAwesomeIcon icon={faFacebook} />
       </a>
       </li>
