@@ -1,28 +1,28 @@
 .Image{
   position: relative;
   width: 33%;
-  height: 40vh;
+  height: 300px;
   padding: 5px;
 }
 
 .Image[dir = '1']{
-  animation: slide-right 1s 1;
+  animation: slide-right 0.5s 1;
   animation-fill-mode: forwards;
 }
 
 .Image[dir = '-1']{
-  animation: slide-left 1s 1;
+  animation: slide-left 0.5s 1;
   animation-fill-mode: forwards;
 }
 
 .hidden-Image[dir = '1']{
-  animation: slide-right 1s 1;
+  animation: slide-right 0.5s 1;
   animation-fill-mode: forwards;
   display: inline;
 }
 
 .hidden-Image[dir = '-1']{
-  animation: slide-left 1s 1;
+  animation: slide-left 0.5s 1;
   animation-fill-mode: forwards;
   display: inline;
 }
@@ -31,7 +31,7 @@
   display: none;
   position: relative;
   width: 33%;
-  height: 40vh;
+  height: 300px;;
   padding: 5px;
 }
 

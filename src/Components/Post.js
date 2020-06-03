@@ -8,7 +8,9 @@ import Girl from '../Images/girl-with-book.jpg';
 class Post extends React.Component{
   render(){
     return(
+      <div className = "parent">
         <div className = "post-container">
+        <>
           <div className = "post-date">
             <div className = "undated-post-date">
               <div className = "day">10</div>
@@ -21,6 +23,9 @@ class Post extends React.Component{
           <img className = "post-img" src = {Girl} />
 
 
+
+          </>
+
           <div className= "post-header">
             Getting Organized
           </div>
@@ -30,8 +35,9 @@ class Post extends React.Component{
               Quis eleifend quam adipiscing vitae proin sagittis nisl rh oncus. Rutrum tellus pelle ntesque eu tincidunt. Nunc mi ipsum faucibus vitae.
               Maecenas sed enim ut sem viverra aliq uet eget sit amet. Placerat in egestas erat imperdiet sed. A pellentesque sit amet porttitor eget dolor.
               Nibh praesent tristique magna sit amet purus gravida quis. Cursus vitaes[...]
-              </p>
-          </div>
+            </p>
+         </div>
+        </div>
         </div>
     );
   }

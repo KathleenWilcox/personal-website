@@ -44,6 +44,16 @@
   z-index: 1;
 }
 
+button:focus {
+  outline:0;
+
+}
+
+button:hover{
+cursor: pointer
+
+}
+
 #goLeft{
     left: 20%;
     @extend %btn-styles;
