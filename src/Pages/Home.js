@@ -19,6 +19,7 @@ class Home extends React.Component{
       <Recycler  images = {[ coffee,  hands ,  model , orion ,kristin, louvre ]} />
       <Post/>
       <Post/>
+      <Post/>
       </>
     )
   }
