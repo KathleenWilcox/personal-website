@@ -1,10 +1,11 @@
-.parent{
+.post-container{
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
 }
-.post-container{
+
+.post-content{
   position: relative;
   width: 800px;
   margin-left: 55px;
@@ -14,11 +15,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-padding-bottom: 54px;
-margin-bottom: 70px;
+  padding-bottom: 54px;
+  margin-bottom: 70px;
   border-bottom: 1px solid #E5E5E5;
-
 }
 
 .post-img{
@@ -27,16 +26,53 @@ margin-bottom: 70px;
 }
 
 .post-header{
+  clear: both;
+  margin: 25px 0 0 0;
+  position: relative;
+  line-height: 1;
+}
+
+h2{
   text-align: left;
   width: 600px;
   color: #222222;
   font-size: 27px;
   margin: 3px 0 0 0;
   font-family: 'Playfair Display', serif;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  letter-spacing: .5px;
+  text-align: left;
+  color: #999999;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: 300;
+}
+
+.categories, .divider, .location{
+  line-height: 1;
+  display: inline;
+  color: #999999;
+}
+
+a{
+  text-decoration: none;
+}
+
+.categories a{
+  font-size: 11.5px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999999;
 }
 
 .post-excerpt-container{
-  margin: 14px 0 0 0;
   width: 600px;
 }
 
@@ -49,6 +85,84 @@ p{
   color: #222222;
 }
 
+.post-footer{
+  clear: both;
+  margin: 24px 0 0 0;
+  display: table;
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+.read-more-button a{
+  display: inline-block;
+  color: #222222;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.read-more-button{
+  display: inline-block;
+  background: #EFE9E8;
+  float: left;
+  font-size: 14px;
+}
+
+.comment-div{
+  display: table-cell;
+  vertical-align: middle;
+  width: auto;
+  text-align: right;
+}
+
+.comment-div a{
+  color: #222222;
+}
+
+.comment-count {
+  font-size: 13px;
+  margin-left: 6px;
+  vertical-align: 1.25px;
+  color: #222222;
+}
+
+.share-icon{
+  display: table-cell;
+  padding-left: 8px;
+  vertical-align: middle;
+  width: 15px;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  color: #222222;
+}
+
+.share-icon-list{
+  display: none;
+  position: absolute;
+  right: 0px;
+  bottom: 9px;
+  background: #FFFFFF;
+  line-height: 1;
+}
+
+.share-soc{
+  color: #222222;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.close-button{
+  color: lightgrey;
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 80px;
+}
 
 .post-date{
   display: inline-block;
@@ -78,8 +192,8 @@ p{
   font-family: 'Raleway', sans-serif;
   margin-bottom: 2px;
   text-transform: uppercase;
-    font-size: 10.5px;
-    line-height: 1;
+  font-size: 10.5px;
+  line-height: 1;
 }
 
 
@@ -87,6 +201,6 @@ p{
   color: #222222;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-    font-size: 10.5px;
-    line-height: 1;
+  font-size: 10.5px;
+  line-height: 1;
 }

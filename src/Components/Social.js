@@ -4,9 +4,7 @@ import '../Styles/navbar.css';
 
 import{
   faTwitter,
-  faFacebook,
   faInstagram,
-  faPinterest
 
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -28,12 +26,12 @@ class Social extends React.Component {
       </li>
 
       <a href= "https://www.pinterest.com/kathleenrwilcox/" target="_blank" className= "soc-icon" >
-        <FontAwesomeIcon icon={faPinterest} />
+        <i class="fab fa-pinterest-p"></i>
       </a>
 
       <li>
       <a href= "https://www.facebook.com/katie.rose.wilcox?ref=bookmarks" target="_blank" className= "soc-icon">
-        <FontAwesomeIcon icon={faFacebook} />
+        <i class="fab fa-facebook-f"></i>
       </a>
       </li>
       </ul>
