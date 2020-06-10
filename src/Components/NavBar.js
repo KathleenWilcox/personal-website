@@ -16,11 +16,11 @@ class NavBar extends React.Component {
 
       <nav className="navbar">
             <ul>
-              <li><Link exact activeClassName="navbar__link--active" className="navbar__link" to="/College">College</Link></li>
+              <li><Link exact className="navbar__link" to="/College">College</Link></li>
 
-              <li><Link activeClassName="navbar__link--active" className="navbar__link" to="/Products">Products</Link></li>
+              <li><Link className="navbar__link" to="/Products">Products</Link></li>
 
-              <li> <Link activeClassName="navbar__link--active" className="navbar__link" to="/About">About</Link> </li>
+              <li> <Link  className="navbar__link" to="/About">About</Link> </li>
             </ul>
       </nav>
 

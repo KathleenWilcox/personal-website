@@ -8,6 +8,19 @@ import Girl from '../Images/girl-with-book.jpg';
 
 
 class Post extends React.Component{
+  constructor(props){
+    super(props);
+    this.state{
+        shareList: false
+    }
+  }
+
+  displayShareList(){
+    this.setState{
+      shareList: !this.state.shareList
+    }
+  }
+
   render(){
     return(
       <div className = "post-container">
@@ -26,9 +39,9 @@ class Post extends React.Component{
 
           <div className= "post-header">
             <div className = "categories">
-              <Link activeClassName="navbar__link--active" className="" to="/College">Beauty</Link>
+              <Link  to="/College">Beauty</Link>
               ,&nbsp;
-              <Link activeClassName="navbar__link--active" className="" to="/College">Lifestyle&nbsp;</Link>
+              <Link to="/College">Lifestyle&nbsp;</Link>
             </div>
 
             <span className = "divider">/</span>
@@ -49,11 +62,11 @@ class Post extends React.Component{
 
           <div className = "post-footer">
             <div className="read-more-button">
-              <Link activeClassName="navbar__link--active" className="" to="/College">Read More</Link>
+              <Link to="/College">Read More</Link>
             </div>
 
             <div className = "comment-div">
-              <Link activeClassName="navbar__link--active" className="" to="/College"><i class="fas fa-comment-alt"></i></Link>
+              <Link  to="/College"><i class="fas fa-comment-alt"></i></Link>
               <span class = "comment-count">10</span>
             </div>
 
