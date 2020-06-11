@@ -2,6 +2,9 @@ import React from 'react';
 
 import Recycler from '../Components/Recycler';
 import Post from '../Components/Post';
+import Sidebar from '../Components/Sidebar';
+
+import '../Styles/home.scss';
 
 import orion from '../Images/orion.jpg';
 import kristin from '../Images/kristin.jpg';
@@ -17,11 +20,21 @@ class Home extends React.Component{
     return(
       <>
       <Recycler  images = {[ coffee,  hands ,  model , orion ,kristin, louvre ]} />
-      <Post/>
-      <Post/>
-      <Post/>
+
+      <div className = "content-container">
+        <div className = "post-container">
+          <Post/>
+          <Post/>
+          <Post/>
+        </div>
+
+        <div className = "sidebar-container">
+          <Sidebar/>
+        </div>
+
+      </div>
       </>
-    )
+    );
   }
 }
 
