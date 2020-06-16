@@ -58,9 +58,10 @@ h4{
   text-align: center;
 }
 
-.abt-soc-icon{
+.abt-soc-icon ul {
   line-height: 1;
   padding: 14px 0 0 0;
+  margin: 0;
 }
 
 .instagram-widget{
@@ -79,6 +80,7 @@ h4{
   color: #222222;
   display: inline-block;
   margin-top: 0;
+  margin-bottom: 17px;
 }
 
 .widget-title:after{
@@ -87,17 +89,21 @@ h4{
   content: '';
   width: calc(100% + 10px);
   height: 10px;
-  background: #EFE9E8;;
+  background: #EFE9E8;
   z-index: -1;  /* to be below the parent element */
   left: -5px;
   bottom: 0px;
 
 }
 
+.insta-widget-list{
+    margin: 0;
+}
+
 .insta-widget-list ul{
   columns: 2;
   padding: 0;
-  margin: 0;
+
   list-style: none;
 }
 
@@ -114,7 +120,8 @@ h4{
   margin-left: 10px;
 }
 
-.insta-widget a{
+.insta-link{
+  overflow: hidden;
   display: block;
   height: 140px;
   width: 140px;

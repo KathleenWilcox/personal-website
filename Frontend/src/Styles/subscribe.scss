@@ -30,6 +30,10 @@
   font-weight: inherit;
 }
 
+.subscribe-container input:focus{
+  outline:0;
+}
+
 .subscribe-container button{
   font-family: 'Raleway', sans-serif;
   background: #EFE9E8;
