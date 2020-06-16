@@ -10,7 +10,10 @@ class Instagram extends React.Component{
       posts_arr: []
     }
     this.getRecentPosts = this.getRecentPosts.bind(this);
-    this.getRecentPosts();
+  }
+
+  componentWillMount(){
+        this.getRecentPosts();
   }
 
   componentDidMount(){
@@ -84,22 +87,15 @@ class Instagram extends React.Component{
 
   render(){
     return(
-      <div className = "instagram-widget">
-        <h4 className = "widget-title"> Follow On Instagram</h4>
-        <ul className = "insta-widget-list">
+      <div >
 
-
-
-          <li className = "insta-widget" >
-            <a >
-
-            {this.getPostsDiv()}
-            </a>
-          </li>
 
 
 
-        </ul>
+            {this.getPostsDiv()}
+
+
+
       </div>
     );
   }
