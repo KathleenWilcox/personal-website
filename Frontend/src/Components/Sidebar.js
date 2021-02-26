@@ -34,7 +34,7 @@ class Sidebar extends React.Component{
           </div>
         </div>
 
-
+        <Instagram/>
 
         <Subscribe />
 
